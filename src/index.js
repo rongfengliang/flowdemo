@@ -1,5 +1,7 @@
 // @flow
-function square(n:number) {
-    return n * n; 
-}
-square("2");  
+function foo(x: ?number): string {
+    if (x) {
+      return x.toString();
+    }
+    return "default string";
+  }
